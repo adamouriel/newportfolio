@@ -1,0 +1,66 @@
+.center > h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #acd5e1
+}
+
+.portfolio-container {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 150px;
+  }
+
+.portfolio-container img {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 300px; /* Maximum width of the images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the frame without distorting the image */
+    margin: 10px; /* Optional: Adds some space around each image */
+  }
+
+
+.portfolio-item {
+    position: relative;
+    display: inline-block; /* or block depending on layout */
+    overflow: hidden; /* Ensures the description doesn't go outside the item */
+}
+
+.portfolio-item img {
+    width: 100%; /* Adjust as necessary */
+    transition: opacity 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* Smooth transition for the hover effect */
+}
+
+.portfolio-item:hover img {
+    opacity: 0.7; /* Grays out the image */
+}
+
+.portfolio-description {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the position */
+    display: none; /* Hide description by default */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Some padding around the text */
+    border-radius: 5px; /* Optional: rounded corners for the background */
+    transition: display 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.portfolio-item:hover .portfolio-description {
+    display: block; /* Show description on hover */
+}
+
+.portfolio-item .code-link {
+    display: block; /* Block-level element to occupy its own line */
+    margin-top: 10px; /* Space between image and GitHub logo */
+}
+
+.portfolio-item .github-logo {
+    width: 24px; /* Size of the GitHub logo */
+    height: auto; /* Maintain aspect ratio */
+}

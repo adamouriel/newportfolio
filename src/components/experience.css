@@ -1,0 +1,99 @@
+* {
+    color: #acd5e1;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.item {
+    display: flex;
+    opacity: 0; /* Start with items invisible */
+    animation-name: fadeIn; /* Reference the defined keyframes animation */
+    animation-duration: 0.5s; /* Duration of the animation */
+    animation-fill-mode: forwards; /* Keep the item visible after the animation completes */
+}
+
+.item:nth-child(1) {
+    animation-delay: 0.5s; /* First item starts half a second after page load */
+}
+
+.item:nth-child(2) {
+    animation-delay: .56s; /* Second item starts one second after page load */
+}
+
+.item:nth-child(3) {
+    animation-delay: .58s; /* Third item starts one and a half seconds after page load */
+}
+
+.date {
+    padding-right: 15px;
+    display: flex;
+    position:relative;
+
+}
+.year{
+    background-color: #5C5D51;
+    padding: 5px 10px;
+    height: 30px;
+    display: inline-block;
+}
+
+.arrow{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0px 15px 10px;
+    border-color: transparent transparent transparent #5C5D51 
+}
+
+.separator{
+    display: flex;
+    flex-direction: column;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background-color: #acd5e1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #acd5e1
+}
+
+.texts {
+    padding-left: 20px;
+    padding-bottom: 35px;
+}
+
+.texts > h3 {
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.texts > h4 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+.texts > p {
+    color: rgba(172, 213, 225, .65);
+    line-height: 1.4rem;
+}
+
+.line {
+    min-height: 10px;
+    width: 2px;
+    background-color: white;
+    flex-grow: 1;
+    margin-left: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

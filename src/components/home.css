@@ -1,0 +1,40 @@
+.home-main{
+    margin: 0 auto;
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 2s linear;
+}
+
+.home-main.visible{
+    opacity: 1;   
+}
+
+.introText{
+    flex: 1;
+    margin-top: 10em;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    
+}
+.name {
+   color: #acd5e1;
+   font-family: 'Source Serif Pro', serif;
+   font-size: 2.6rem;
+   font-weight: 600;
+}
+
+.button{
+    font-size: 2.1rem;
+    border: 3px solid #acd5e1;
+    border-radius: 7px;
+    color: #acd5e1;
+    background-color: rgba(255, 255, 255, 0.219);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 15px;
+}
