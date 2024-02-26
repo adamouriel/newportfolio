@@ -1,7 +1,3 @@
-* {
-    color: #acd5e1;
-}
-
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -13,22 +9,22 @@
   
 .item {
     display: flex;
-    opacity: 0; /* Start with items invisible */
-    animation-name: fadeIn; /* Reference the defined keyframes animation */
-    animation-duration: 0.5s; /* Duration of the animation */
-    animation-fill-mode: forwards; /* Keep the item visible after the animation completes */
+    opacity: 0; 
+    animation-name: fadeIn;
+    animation-duration: 0.5s; 
+    animation-fill-mode: forwards; 
 }
 
 .item:nth-child(1) {
-    animation-delay: 0.5s; /* First item starts half a second after page load */
+    animation-delay: 0.25s;
 }
 
 .item:nth-child(2) {
-    animation-delay: .56s; /* Second item starts one second after page load */
+    animation-delay: .3s;
 }
 
 .item:nth-child(3) {
-    animation-delay: .58s; /* Third item starts one and a half seconds after page load */
+    animation-delay: .35s;
 }
 
 .date {
@@ -38,10 +34,11 @@
 
 }
 .year{
-    background-color: #5C5D51;
+    background-color: #414241;
     padding: 5px 10px;
     height: 30px;
     display: inline-block;
+    color: white;
 }
 
 .arrow{
@@ -50,7 +47,7 @@
     height: 0;
     border-style: solid;
     border-width: 15px 0px 15px 10px;
-    border-color: transparent transparent transparent #5C5D51 
+    border-color: transparent transparent transparent #414241 
 }
 
 .separator{
@@ -67,6 +64,7 @@
 }
 
 .texts {
+    color: #acd5e1;
     padding-left: 20px;
     padding-bottom: 35px;
 }

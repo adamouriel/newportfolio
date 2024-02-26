@@ -1,7 +1,19 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .center > h2 {
     text-align: center;
     font-size: 3rem;
-    color: #acd5e1
+    color: #fff;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .portfolio-container {
@@ -13,54 +25,52 @@
   }
 
 .portfolio-container img {
-    width: 100%; /* Adjust the width as needed */
-    max-width: 300px; /* Maximum width of the images */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the frame without distorting the image */
-    margin: 10px; /* Optional: Adds some space around each image */
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    object-fit: cover; 
+    margin: 10px; 
   }
 
 
 .portfolio-item {
     position: relative;
-    display: inline-block; /* or block depending on layout */
-    overflow: hidden; /* Ensures the description doesn't go outside the item */
+    display: inline-block; 
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .portfolio-item img {
-    width: 100%; /* Adjust as necessary */
+    width: 100%; 
     transition: opacity 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* Smooth transition for the hover effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); 
 }
 
 .portfolio-item:hover img {
-    opacity: 0.7; /* Grays out the image */
+    opacity: 0.7; 
 }
 
 .portfolio-description {
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset the position */
-    display: none; /* Hide description by default */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px; /* Some padding around the text */
-    border-radius: 5px; /* Optional: rounded corners for the background */
-    transition: display 0.3s ease; /* Smooth transition for the hover effect */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: none; 
+    color: white; 
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 5px; 
+    transition: display 0.3s ease; 
 }
 
 .portfolio-item:hover .portfolio-description {
-    display: block; /* Show description on hover */
+    display: block; 
 }
 
 .portfolio-item .code-link {
-    display: block; /* Block-level element to occupy its own line */
-    margin-top: 10px; /* Space between image and GitHub logo */
+    display: block; 
+    margin-top: 10px; 
 }
 
-.portfolio-item .github-logo {
-    width: 24px; /* Size of the GitHub logo */
-    height: auto; /* Maintain aspect ratio */
-}

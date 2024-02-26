@@ -14,7 +14,7 @@ export default function Navbar() {
                 />
                 </Link>
             <div className="navbar-sitemap">
-                <a href="/aboutme">Skills</a>
+                <a href="/skills">Skills</a>
                 <a href="/portfolio">Portfolio</a>
                 <a href="/experience">Experience</a>
             </div>
