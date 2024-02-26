@@ -6,7 +6,12 @@
       opacity: 1;
     }
   }
-  
+
+.center > h2 {
+    padding-bottom: 40px;
+}
+
+
 .item {
     display: flex;
     opacity: 0; 
