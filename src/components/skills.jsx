@@ -4,6 +4,7 @@ import JS from '../assets/js-logo.png'
 import HTML from '../assets/html-css.png'
 import REACT from '../assets/react-logo.png'
 import AWS from '../assets/aws-logo.png'
+import { GithubContributions } from "react-github-graph"
 
 export default function Skills() {
     return (
@@ -15,6 +16,9 @@ export default function Skills() {
                     <div className="skill-box"><img src={HTML} alt="" /><br/><span>HTML & CSS</span></div>
                     <div className="skill-box"><img src={REACT} alt="" /><span><br/>React</span></div>
                     <div className="skill-box"><br/><br/><img className ="AWS" src={AWS} alt="" /><span> <br/> AWS</span></div>
+                </div>
+                <div className="skills-container">
+                    <div className="skill-box"> <GithubContributions username="adamouriel"/> </div>
                 </div>
             </section>
         </div>
