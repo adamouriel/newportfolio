@@ -4,10 +4,14 @@ import JS from '../assets/js-logo.png'
 import HTML from '../assets/html-css.png'
 import REACT from '../assets/react-logo.png'
 import AWS from '../assets/aws-logo.png'
-import { GithubContributions } from "react-github-graph"
+import {useEffect} from 'react'
+import GitHubCalendar from 'react-github-calendar';
+
 
 export default function Skills() {
+    useEffect(() => {},[])
     return (
+        
         <div className="center">
             <section className="skills">
                 <h2>My Skills</h2>
@@ -17,9 +21,8 @@ export default function Skills() {
                     <div className="skill-box"><img src={REACT} alt="" /><span><br/>React</span></div>
                     <div className="skill-box"><br/><br/><img className ="AWS" src={AWS} alt="" /><span> <br/> AWS</span></div>
                 </div>
-                <div className="skills-container">
-                    <div className="skill-box"> <GithubContributions username="adamouriel"/> </div>
-                </div>
+                <br /><br /><br /><br /><br /><br />
+                <div className="skill-box2"><GitHubCalendar colorScheme="dark" username="adamouriel" /> </div>
             </section>
         </div>
     )

@@ -9,6 +9,7 @@
     }
 }
 
+
 .skills > h2 {
     color: #fff;
     font-size:3.5rem;
@@ -34,6 +35,21 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
+}
+.skill-box2 {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 15px;
+    border-color: #3D3E42;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .skill-box:nth-child(1) { animation-delay: 0s; }
