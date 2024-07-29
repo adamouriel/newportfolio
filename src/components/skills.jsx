@@ -37,13 +37,13 @@ export default function Skills() {
                     <div className="skill-box"><br/><br/><img className ="AWS" src={AWS} alt="" /><span> <br/> AWS</span></div>
                 </div>
                 <br /><br /><br /><br /><br /><br />
-                <div className="skill-box2"><GitHubCalendar colorScheme="dark" username="adamouriel"   
+                {/* <div className="skill-box2"><GitHubCalendar colorScheme="dark" username="adamouriel"   
 //                 transformData={selectLastHalfYear} 
 //   hideColorLegend
 //   labels={{
 //     totalCount: '{{count}} contributions in the last half year',
 //   }} 
-    /> </div>
+    /> </div> */}
             </section>
         </div>
     )

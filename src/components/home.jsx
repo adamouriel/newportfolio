@@ -13,7 +13,7 @@ export default function Home() {
         <section className={`home-main ${homeMain}`}> {}
             <div className="introText">
                 <p>Welcome! I'm <span className="name">ADAM OURIEL</span> <br /> Fullstack JavaScript Developer, Music Producer, and Design Enthusiast</p>
-                <a className="button" href={resume} download="résumé.pdf">Download Résumé</a>{}
+                {/* <a className="button" href={resume} download="résumé.pdf">Download Résumé</a>{} */}
             </div>
             <div>
                 <img src={picture} alt="Adam Ouriel"/> {}
