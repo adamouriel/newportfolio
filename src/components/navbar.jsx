@@ -14,8 +14,8 @@ export default function Navbar() {
                 />
             </Link>
             <div className="navbar-sitemap">
-                <a href="/skills">Skills</a>
-                <a href="/portfolio">Portfolio</a>
+            <Link to="/skills">Skills</Link>
+            <Link to="/portfolio">Portfolio</Link>
                 <a href="https://drive.google.com/file/d/1siLM6ZxHEl5FnC7Zv7l3NQmqTetCWubH/view" target="_blank" rel="noopener noreferrer">Résumé</a>
             </div>
             <div className="navbar-socialIcons">

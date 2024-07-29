@@ -1,35 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Skills from '../components/Skills';
-import Portfolio from '../components/Portfolio';
-import Home from '../components/Home';
-import './index.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/navbar';
+import Skills from './components/skills';
+import Portfolio from './components/portfolio';
+import Experience from './components/experience';
+import Home from './pages/Home';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home />,
-  },
-  {
-    path: '/skills',
-    element: <Skills />,
-  },
-  {
-    path: '/portfolio',
-    element: <Portfolio />,
-  },
-]);
+function App() {
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/experience" element={<Experience />} />
+            </Routes>
+        </Router>
+    );
+}
 
-const App = () => (
-  <RouterProvider router={router}>
-    <Navbar />
-    <div className="content">
-      <Outlet />
-    </div>
-  </RouterProvider>
-);
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default App;
