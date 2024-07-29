@@ -2,7 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import calculator from '../assets/calculator.jpg'
 import frogger from '../assets/frogger.jpg'
-import construction from '../assets/under-construction.jpg'
+import netflix from '../assets/not-netflix.png'
 
 export default function Portfolio() {
     return (
@@ -22,8 +22,8 @@ export default function Portfolio() {
                     </a>
                 </div>
                 <div className="portfolio-item-wrapper">
-                    <a href="" className="portfolio-item">
-                        <img src={construction} alt="Under Construction" />
+                    <a href="https://not-netflix-site-seven.vercel.app/" className="portfolio-item">
+                        <img src={netflix} alt="Not Netflix" />
                         <span className="portfolio-description">Not Netflix</span>
                     </a>
                 </div>
