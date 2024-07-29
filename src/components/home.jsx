@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <section className={`home-main ${homeMain}`}> {}
             <div className="introText">
-                <p>Welcome! I'm <span className="name">ADAM OURIEL</span> <br />, Fullstack JavaScript Developer, Music Producer, and Design Enthusiast</p>
+                <p>Welcome! I'm <span className="name">ADAM OURIEL</span> <br /> Fullstack JavaScript Developer, Music Producer, and Design Enthusiast</p>
                 {/* <a className="button" href={resume} download="résumé.pdf">Download Résumé</a>{} */}
             </div>
             <div>
