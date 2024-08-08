@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="navbar-sitemap">
             <Link to="/skills">Skills</Link>
             <Link to="/portfolio">Portfolio</Link>
-                <a href="https://drive.google.com/file/d/1siLM6ZxHEl5FnC7Zv7l3NQmqTetCWubH/view" target="_blank" rel="noopener noreferrer">Résumé</a>
+                <a href="https://drive.google.com/file/d/1BcHR0XHzptgk8WDn8Zj9_X5EO5n8I7dK/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Résumé</a>
             </div>
             <div className="navbar-socialIcons">
                 <a href="https://www.linkedin.com/in/adam-ouriel-a02071273/" target="_blank" rel="noopener noreferrer">

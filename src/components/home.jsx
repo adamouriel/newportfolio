@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'; 
 import picture from '../assets/adam-pic.png';
 import './home.css';
-import resume from '../assets/resume.pdf';
+
 
 export default function Home() {
     const [homeMain, setHomeMain] = useState(''); 
